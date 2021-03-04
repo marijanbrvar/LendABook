@@ -16,15 +16,19 @@
   <header>
     <nav class="navbar fixed-top navbar-dark top-nav shadow-lg">
       <div class="container justify-content-between align-items-center">
-        <div class="flex-grow-1 flex-sm-grow-0 text-center">
+        <div class="brand flex-grow-1 flex-md-grow-0 text-center">
           <a class="navbar-brand" href="#"><img src="./assets/img/coffeetogo_logo.svg" height="30" alt=""></a>
         </div>
-        <div class="pt-2 d-flex flex-grow-1 flex-sm-grow-0 justify-content-center">
+        <div class="menu pt-2 d-flex flex-grow-1 flex-md-grow-0 justify-content-center">
           <div class="nav">
-            <a class="nav-link text-light" href="#"><i class="bi bi-search"></i><span class="ms-2 d-none d-md-inline-block">Stores</span></a>
-            <a class="nav-link text-light" href="#"><i class="bi bi-person"></i><span class="ms-2 d-none d-md-inline-block">Account</span></a>
-            <a class="nav-link text-light" href="#"><i class="bi bi-rss"></i><span class="ms-2 d-none d-md-inline-block">Blog</span></a>
-            <a class="nav-link text-light" href="#" tabindex="-1"><i class="bi bi-list"></i><span class="ms-2 d-none d-md-inline-block">More</span></a>
+            <a class="nav-link text-light" href="#"><i class="bi bi-search"></i><span
+                class="ms-2 d-none d-sm-inline-block">Stores</span></a>
+            <a class="nav-link text-light" href="#"><i class="bi bi-person"></i><span
+                class="ms-2 d-none d-sm-inline-block">Account</span></a>
+            <a class="nav-link text-light" href="#"><i class="bi bi-rss"></i><span
+                class="ms-2 d-none d-sm-inline-block">Blog</span></a>
+            <a class="nav-link text-light" href="#" tabindex="-1"><i class="bi bi-list"></i><span
+                class="ms-2 d-none d-sm-inline-block">More</span></a>
           </div>
         </div>
       </div>
@@ -34,12 +38,17 @@
     <section>
       <div class="hero d-flex align-items-center">
         <div class="container">
-          <div class="col-md-7 mx-auto">
-            <h1 class="text-white text-center">CoffeeToGo...Your gateway for great Day</h1>
-            <div class="search-box p-3 p-md-5 bg-light rounded">
+          <div class="mx-auto">
+            <h1 class="text-white text-center">Coffee<span class="text-warning">To</span>Go... <span
+                class="text-uppercase">Your gateway for a great
+                Day</span> </h1>
+            <div class="search-box">
               <form>
-                <input type="text" placeholder="Search..." class="w-75">
-                <button>Go</button>
+                <label for="search" class="form-label mb-0 text-uppercase fw-bold">Search by key word:</label>
+                <div class="d-md-flex">
+                  <input class="form-control mb-1 mb-md-0" type="search" id="search" placeholder="Type here...">
+                  <a href="#" class="flex-grow-1 justify-content-center d-flex btn btn-danger text-uppercase" type="submit">Search</a>
+                </div>
               </form>
             </div>
           </div>

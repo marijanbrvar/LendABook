@@ -6,20 +6,56 @@
 body {
   padding-top: 3.53em;
 }
+@media screen and (max-width: 576px) {
+  body {
+    padding-top: 92px;
+  }
+}
 
 .hero {
-  height: 400px;
+  height: 450px;
   min-height: 100%;
   background: linear-gradient(to top, #000000, #4646463c), url("/assets/img/picography-rustic-coffee-sign.jpg") no-repeat center;
   background-size: cover;
 }
+@media screen and (max-width: 576px) {
+  .hero {
+    height: calc(100vh - 90px);
+    transform: height 1s;
+  }
+}
+.hero h1 {
+  font-size: 2rem;
+}
+@media screen and (max-width: 576px) {
+  .hero h1 {
+    font-size: 1.333rem;
+  }
+}
 
 .search-box {
   display: relative;
+  background: #ffffffbd;
+  max-width: 75%;
+  margin: 0 auto;
+  padding: 3em;
+  border-radius: 0.5rem;
+}
+@media screen and (max-width: 576px) {
+  .search-box {
+    max-width: 100%;
+    padding: 1em;
+    transform: padding 1s;
+  }
 }
 
 .top-nav {
   background-color: #2f1000;
+}
+@media screen and (max-width: 576px) {
+  .top-nav .menu, .top-nav .brand {
+    flex: 1 0 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
