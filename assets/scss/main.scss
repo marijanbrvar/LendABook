@@ -9,6 +9,19 @@ body {
   }
 }
 
+.result {
+  a {
+    color: #000;
+    text-decoration: none;
+    transition: color 1s;
+
+    :hover {
+      color: #0000008a;
+      transition: color 1s;
+    }
+  }
+}
+
 .hero {
   height: 450px;
 
