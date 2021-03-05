@@ -3,6 +3,7 @@
 
 body {
   padding-top: 3.53em;
+
   @media screen and (max-width: 576px) {
     padding-top: 92px;
   }
@@ -10,19 +11,25 @@ body {
 
 .hero {
   height: 450px;
+
   @media screen and (max-width: 576px) {
     height: calc(100vh - 92px);
     width: 100%;
   }
+
   min-height: 100%;
-  background: linear-gradient(to top, #000000, #4646463c),
+  background:
+    linear-gradient(to top, #000, #4646463c),
     url("/assets/img/vintage-books.jpg") no-repeat center;
   background-size: cover;
+
   h2 {
     font-size: 1.8rem;
+
     @media screen and (max-width: 576px) {
       font-size: 1rem;
     }
+
     @media screen and (max-width: 767px) {
       font-size: 1.3rem;
     }
@@ -30,14 +37,14 @@ body {
 }
 
 .search-box {
-  display: relative;
   background: #ffffffbd;
   max-width: 75%;
+
   @media screen and (max-width: 576px) {
     max-width: 100%;
     padding: 1em;
-    transform: padding 1s;
   }
+
   margin: 0 auto;
   padding: 3em;
   border-radius: 0.5rem;
@@ -45,6 +52,7 @@ body {
 
 .top-nav {
   background-color: $red;
+
   @media screen and (max-width: 576px) {
     .menu,
     .brand {
@@ -80,13 +88,16 @@ body {
   flex-direction: column;
   justify-items: center;
   align-items: center;
+
   .menu {
     margin: 0.5em;
     font-size: 0.8em;
+
     a {
       padding: 1em;
     }
   }
+
   .footer-logo {
     margin: 3em 0 1em 0;
     border-radius: 50%;
@@ -97,33 +108,49 @@ body {
     padding-top: 14px;
     background-color: #212529;
   }
+
   @media screen and (min-width: 991px) {
+    position: relative;
     min-height: 110px;
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 2em;
+
     @media screen and (min-width: 1200px) {
       justify-content: center;
     }
+
     .menu {
       position: relative;
-      margin: 0.5em;
       font-size: 0.8em;
+
       a {
         padding: 0.6em 2em;
       }
+
       @media screen and (min-width: 1200px) {
         justify-content: center;
         margin: 0.9em;
         font-size: 1em;
+
         a {
-          padding: 1em 2em;
+          padding: 0.7em 1.5em;
+        }
+
+        > ul:first-child {
+          margin-right: 1.2em;
+        }
+
+        > ul:last-child {
+          margin-left: 1.2em;
         }
       }
     }
+
     .footer-logo {
       position: absolute;
+      top: -15px;
       background-color: #212529 !important;
-      top: 25px;
       left: calc(50% - 40px);
       z-index: 1;
     }

@@ -1,24 +1,24 @@
 /* SCSS HEX */
-$black: #000000;
-$red: #E44B40;
-$red-light: #F0795F;
-$gray: #96A4A6;
+$black: #000;
+$red: #e44b40;
+$red-light: #f0795f;
+$gray: #96a4a6;
 $gray-dark: #353535;
-$blue: #3A9BD6;
+$blue: #3a9bd6;
 $gold: #c7a17a;
 
 .text-red-light {
-  color: $red-light!important;
+  color: $red-light !important;
 }
 
 .text-grey {
-  color: $gray!important;
+  color: $gray !important;
 }
 
 .text-blue {
-  color: $blue!important;
+  color: $blue !important;
 }
 
 .bg-gray-dark {
-  background-color: $gray-dark!important;
+  background-color: $gray-dark !important;
 }
