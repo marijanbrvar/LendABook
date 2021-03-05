@@ -13,16 +13,19 @@ body {
 .hero {
   height: 450px;
   @media screen and (max-width: 576px) {
-    height: calc(100vh - 90px);
-    transform: height 1s;
+    height: calc(100vh - 92px);
+    width: 100%;
   }
   min-height: 100%;
   background: linear-gradient(to top, #000000, #4646463c), url("/assets/img/picography-rustic-coffee-sign.jpg") no-repeat center;
   background-size: cover;
-  h1 {
-    font-size: 2rem;
+  h2 {
+    font-size: 1.8rem;
     @media screen and (max-width: 576px) {
-      font-size: 1.333rem;
+      font-size: 1rem;
+    }
+    @media screen and (max-width: 767px) {
+      font-size: 1.3rem;
     }
   }
 }
@@ -48,4 +51,8 @@ body {
       flex: 1 0 100%;
     }
   }
+}
+
+.locations {
+  background: #c7a17a;
 }

@@ -20,16 +20,21 @@ body {
 }
 @media screen and (max-width: 576px) {
   .hero {
-    height: calc(100vh - 90px);
-    transform: height 1s;
+    height: calc(100vh - 92px);
+    width: 100%;
   }
 }
-.hero h1 {
-  font-size: 2rem;
+.hero h2 {
+  font-size: 1.8rem;
 }
 @media screen and (max-width: 576px) {
-  .hero h1 {
-    font-size: 1.333rem;
+  .hero h2 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero h2 {
+    font-size: 1.3rem;
   }
 }
 
@@ -56,6 +61,10 @@ body {
   .top-nav .menu, .top-nav .brand {
     flex: 1 0 100%;
   }
+}
+
+.locations {
+  background: #c7a17a;
 }
 
 /*# sourceMappingURL=style.css.map */
