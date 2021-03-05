@@ -3,6 +3,7 @@ $black: #000000;
 $red: #E44B40;
 $red-light: #F0795F;
 $gray: #96A4A6;
+$gray-dark: #353535;
 $blue: #3A9BD6;
 $gold: #c7a17a;
 
@@ -16,4 +17,8 @@ $gold: #c7a17a;
 
 .text-blue {
   color: $blue!important;
+}
+
+.bg-gray-dark {
+  background-color: $gray-dark!important;
 }
