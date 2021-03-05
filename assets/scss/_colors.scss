@@ -5,3 +5,15 @@ $red-light: #F0795F;
 $gray: #96A4A6;
 $blue: #3A9BD6;
 $gold: #c7a17a;
+
+.text-red-light {
+  color: $red-light!important;
+}
+
+.text-grey {
+  color: $gray!important;
+}
+
+.text-blue {
+  color: $blue!important;
+}

@@ -53,14 +53,14 @@ body {
   }
 }
 
-.locate {
-  background: $red;
-}
-
 .borow {
-  background: $gray;
+  background: $red-light;
 }
 
 .lend {
+  background: $gray;
+}
+
+.anytime {
   background: $blue;
 }

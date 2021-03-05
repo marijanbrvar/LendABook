@@ -1,5 +1,17 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css");
 /* SCSS HEX */
+.text-red-light {
+  color: #F0795F !important;
+}
+
+.text-grey {
+  color: #96A4A6 !important;
+}
+
+.text-blue {
+  color: #3A9BD6 !important;
+}
+
 body {
   padding-top: 3.53em;
 }
@@ -60,15 +72,15 @@ body {
   }
 }
 
-.locate {
-  background: #E44B40;
-}
-
 .borow {
-  background: #96A4A6;
+  background: #F0795F;
 }
 
 .lend {
+  background: #96A4A6;
+}
+
+.anytime {
   background: #3A9BD6;
 }
 
