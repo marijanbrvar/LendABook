@@ -12,7 +12,7 @@ body {
 .hero {
   height: 450px;
   min-height: 100%;
-  background: linear-gradient(to top, #000000, #4646463c), url("/assets/img/picography-rustic-coffee-sign.jpg") no-repeat center;
+  background: linear-gradient(to top, #000000, #4646463c), url("/assets/img/vintage-books.jpg") no-repeat center;
   background-size: cover;
 }
 @media screen and (max-width: 576px) {
@@ -60,8 +60,16 @@ body {
   }
 }
 
-.locations {
-  background: #c7a17a;
+.locate {
+  background: #E44B40;
+}
+
+.borow {
+  background: #96A4A6;
+}
+
+.lend {
+  background: #3A9BD6;
 }
 
 /*# sourceMappingURL=style.css.map */
