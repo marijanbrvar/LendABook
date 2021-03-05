@@ -37,82 +37,161 @@
   </header>
   <main>
     <section class="bg-light ">
-      <div class="container ">
-      <div class="d-flex align-items-center">
-          <div class="p-4 text-center">
-            <h1 class="h4 text-muted">Filter by, name, author, genres, language </h1>
-            <form class="d-flex align-items-center flex-wrap">
-              <div class="text-start flex-grow-1 m-2">
-                <label for="name" class="form-label mb-0 fw-bold text-uppercase"><small>Name</small></label>
-                <input class="form-control" list="nameList" id="name" placeholder="Type to search...">
-                <datalist id="nameList">
-                  <option value="Dime novels">
-                  <option value="The Lord of the Rings">
-                  <option value="The Hobbit">
-                  <option value="Thriller">
-                  <option value="Robert Langdon">
-                </datalist>
-              </div>
-              <div class="text-start flex-grow-1 m-2">
-                <label for="author" class="form-label mb-0 fw-bold text-uppercase">Author</label>
-                <input class="form-control" list="authorsList" id="author" placeholder="Author...">
-                <datalist id="authorsList">
-                  <option value="Edgar Wallace">
-                  <option value="J. R. R. Tolkien">
-                  <option value="Mickey Spillane">
-                  <option value="Stephen King">
-                  <option value="Jin Yong">
-                </datalist>
-              </div>
-              <div class="text-start flex-grow-1 m-2">
-                <label for="genres" class="form-label mb-0 fw-bold text-uppercase">Genres</label>
-                <input class="form-control" list="genresList" id="genres" placeholder="Genres...">
-                <datalist id="genresList">
-                  <option value="Arts & Music">
-                  <option value="Biographies">
-                  <option value="Business">
-                  <option value="Comics">
-                  <option value="Computers & Tech">
-                </datalist>
-              </div>
-              <div class="text-start flex-grow-1 m-2">
-                <label for="language" class="form-label mb-0 fw-bold text-uppercase">Language</label>
-                <input class="form-control" list="languageList" id="language" placeholder="Language...">
-                <datalist id="languageList">
-                  <option value="English">
-                  <option value="German">
-                  <option value="Italian">
-                  <option value="Serbian">
-                  <option value="Slovenian">
-                </datalist>
-              </div>
+      <div class="container pt-5 pb-4">
+        <div class="d-flexalign-items-center">
+          <h1 class="h4 text-muted text-center">Filter by, name, author, genres, language </h1>
+          <form class="d-flex align-items-center flex-wrap flex-md-nowrap">
+            <div class="text-start flex-grow-1 my-2">
+              <label for="name" class="form-label mb-0 fw-bold text-uppercase"><small>Name</small></label>
+              <input class="form-control" list="nameList" id="name" placeholder="Type to search...">
+              <datalist id="nameList">
+                <option value="Dime novels">
+                <option value="The Lord of the Rings">
+                <option value="The Hobbit">
+                <option value="Thriller">
+                <option value="Robert Langdon">
+              </datalist>
+            </div>
+            <div class="text-start flex-grow-1 m-2">
+              <label for="author" class="form-label mb-0 fw-bold text-uppercase">Author</label>
+              <input class="form-control" list="authorsList" id="author" placeholder="Author...">
+              <datalist id="authorsList">
+                <option value="Edgar Wallace">
+                <option value="J. R. R. Tolkien">
+                <option value="Mickey Spillane">
+                <option value="Stephen King">
+                <option value="Jin Yong">
+              </datalist>
+            </div>
+            <div class="text-start flex-grow-1 m-2">
+              <label for="genres" class="form-label mb-0 fw-bold text-uppercase">Genres</label>
+              <input class="form-control" list="genresList" id="genres" placeholder="Genres...">
+              <datalist id="genresList">
+                <option value="Arts & Music">
+                <option value="Biographies">
+                <option value="Business">
+                <option value="Comics">
+                <option value="Computers & Tech">
+              </datalist>
+            </div>
+            <div class="text-start flex-grow-1 m-2">
+              <label for="language" class="form-label mb-0 fw-bold text-uppercase">Language</label>
+              <input class="form-control" list="languageList" id="language" placeholder="Language...">
+              <datalist id="languageList">
+                <option value="US English">
+                <option value="German">
+                <option value="Italian">
+                <option value="Serbian">
+                <option value="Slovenian">
+              </datalist>
+            </div>
+            <div class="flex-fill text-end text-md-start">
               <button type="button" class="flex-grow-1 btn btn-primary mt-4">Search</button>
-            </form>
-
-          </div>
+              <button type="button" class="flex-grow-1 btn btn-warning mt-4"><i
+                  class="bi bi-file-earmark-check"></i>Clear</button>
+            </div>
+          </form>
         </div>
       </div>
     </section>
     <section>
-      <div class="container my-2">
-        <h4>Search result found 7 book(s)</h4>
+      <div class="container my-2 result">
+        <h4 class="fs-5 fw-light text-muted my-3">Search result found 7 book(s)</h4>
         <div class="row">
-          <div class="col-12 col-md-4">
-            <div class="card result">
-                <a href="../books/">
-                <div class="d-flex">
-                  <div class="">
-                    <img src="../assets/img/angels.jpg" width="100" class="img-fluid" alt="angels">
-                  </div>
-                  <div class="card-body">
-                    <h5><strong>Title:</strong> Angels & Demons</h5>
-                    <h6><strong>Author:</strong> Dan Brown</h6>
-                  </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+            <div class="card book-result">
+              <a href="../books/">
+                <div class="book-image">
+                  <img src="../assets/img/angels.jpg" class="card-img-top" alt="angels">
+                </div>
+                <div class="card-body p-0 m-0 text-center">
+                  <h5 class="book-title mt-2 text-truncate">Angels & Demons</h5>
+                  <h6 class="book-author text-truncate">Dan Brown</h6>
                 </div>
               </a>
-              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+            <div class="card book-result">
+              <a href="../books/">
+                <div class="book-image">
+                  <img src="../assets/img/davincicode_.jpg" class="card-img-top" alt="angels">
+                </div>
+                <div class="card-body p-0 m-0 text-center">
+                  <h5 class="book-title text-truncate mt-2">Da Vinci Code</h5>
+                  <h6 class="book-author text-truncate">Dan Brown</h6>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+            <div class="card book-result">
+              <a href="../books/">
+                <div class="book-image">
+                  <img src="../assets/img/judas.jpg" class="card-img-top" alt="angels">
+                </div>
+                <div class="card-body p-0 m-0 text-center">
+                  <h5 class="book-title text-truncate mt-2">The Judas</h5>
+                  <h6 class="book-author text-truncate">Dan Brown</h6>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+            <div class="card book-result">
+              <a href="../books/">
+                <div class="book-image">
+                  <img src="../assets/img/lostsymbol.jpg" class="card-img-top" alt="angels">
+                </div>
+                <div class="card-body p-0 m-0 text-center">
+                  <h5 class="book-title text-truncate mt-2">Lost Symbol</h5>
+                  <h6 class="book-author text-truncate">Dan Brown</h6>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+            <div class="card book-result">
+              <a href="../books/">
+                <div class="book-image">
+                  <img src="../assets/img/origin.jpg" class="card-img-top" alt="angels">
+                </div>
+                <div class="card-body p-0 m-0 text-center">
+                  <h5 class="book-title text-truncate mt-2">Origin</h5>
+                  <h6 class="book-author text-truncate">Dan Brown</h6>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+            <div class="card book-result">
+              <a href="../books/">
+                <div class="book-image">
+                  <img src="../assets/img/tomorow.jpg" class="card-img-top" alt="angels">
+                </div>
+                <div class="card-body p-0 m-0 text-center">
+                  <h5 class="book-title text-truncate mt-2">If Tomorrow Comes</h5>
+                  <h6 class="book-author text-truncate">Sidney Sheldon</h6>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+            <div class="card book-result">
+              <a href="../books/">
+                <div class="book-image">
+                  <img src="../assets/img/bourne.jpg" class="card-img-top" alt="angels">
+                </div>
+                <div class="card-body p-0 m-0 text-center">
+                  <h5 class="book-title text-truncate mt-2">Bourne Ultimatum</h5>
+                  <h6 class="book-author text-truncate">Robert Ludlum</h6>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
+      </div>
+      </div>
       </div>
     </section>
   </main>
@@ -153,14 +232,14 @@
             </form>
           </div>
         </div>
-        <div class="col-12 col-md-4  py-3">
+        <div class="col-6 col-md-4  py-3">
           <div class="text-light text-center">
             <h5 class="mb-1 mb-md-4">CONTACT</h5>
             <p class="lh-1">Have a question or submision? <a href="mailto:info@example.com"
                 class="link text-decoration-none btn-link text-danger">info@example.com</a></p>
           </div>
         </div>
-        <div class="col-12 col-md-4  py-3">
+        <div class="col-6 col-md-4  py-3">
           <div class="text-light text-center">
             <h5 class="mb-1 mb-md-4">ABOUT</h5>
             <p class="mb-0">LendABook is online platform that assists people to find a book of their desire to
