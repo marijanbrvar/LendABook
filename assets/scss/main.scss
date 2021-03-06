@@ -1,0 +1,177 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css");
+@import "colors";
+@import "utility";
+
+body {
+  padding-top: 3.53em;
+
+  @media screen and (max-width: 576px) {
+    padding-top: 92px;
+  }
+}
+
+.hero {
+  height: 450px;
+
+  @media screen and (max-width: 576px) {
+    height: calc(100vh - 92px);
+    width: 100%;
+  }
+
+  min-height: 100%;
+  background:
+    linear-gradient(to top, #000, #4646463c),
+    url("/assets/img/vintage-books.jpg") no-repeat center;
+  background-size: cover;
+
+  h2 {
+    font-size: 1.8rem;
+
+    @media screen and (max-width: 576px) {
+      font-size: 1rem;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+.search-box {
+  background: #ffffffbd;
+  max-width: 75%;
+
+  @media screen and (max-width: 576px) {
+    max-width: 100%;
+    padding: 1em;
+  }
+
+  margin: 0 auto;
+  padding: 3em;
+  border-radius: 0.5rem;
+}
+
+.top-nav {
+  background-color: $red;
+
+  @media screen and (max-width: 576px) {
+    .menu,
+    .brand {
+      flex: 1 0 100%;
+    }
+  }
+}
+
+.result {
+  a {
+    color: #000;
+    text-decoration: none;
+    transition: color 1s;
+
+    :hover {
+      color: #0000008a;
+      transition: color 1s;
+    }
+  }
+
+  .book-result {
+    display: flex;
+    justify-content: center;
+
+    .book-image {
+      width: 100%;
+      height: 210px;
+      max-height: 100%;
+
+      img {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .book-title {
+    font-size: 1rem;
+    font-weight: bolder;
+    color: $red;
+  }
+
+  .book-author {
+    font-size: 0.8rem;
+  }
+}
+
+.footer-up {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+
+  .menu {
+    margin: 0.5em;
+    font-size: 0.8em;
+
+    a {
+      padding: 1em;
+    }
+  }
+
+  .footer-logo {
+    margin: 3em 0 1em 0;
+    border-radius: 50%;
+    border: 1px solid #686868;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    padding-top: 14px;
+    background-color: #212529;
+  }
+
+  @media screen and (min-width: 991px) {
+    position: relative;
+    min-height: 110px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 2em;
+
+    @media screen and (min-width: 1200px) {
+      justify-content: center;
+    }
+
+    .menu {
+      position: relative;
+      font-size: 0.8em;
+
+      a {
+        padding: 0.6em 2em;
+      }
+
+      @media screen and (min-width: 1200px) {
+        justify-content: center;
+        margin: 0.9em;
+        font-size: 1em;
+
+        a {
+          padding: 0.7em 1.5em;
+        }
+
+        > ul:first-child {
+          margin-right: 1.2em;
+        }
+
+        > ul:last-child {
+          margin-left: 1.2em;
+        }
+      }
+    }
+
+    .footer-logo {
+      position: absolute;
+      top: -15px;
+      background-color: #212529 !important;
+      left: calc(50% - 40px);
+      z-index: 1;
+    }
+  }
+}

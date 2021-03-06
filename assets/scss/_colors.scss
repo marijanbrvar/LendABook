@@ -1,0 +1,24 @@
+/* SCSS HEX */
+$black: #000;
+$red: #e44b40;
+$red-light: #f0795f;
+$gray: #96a4a6;
+$gray-dark: #353535;
+$blue: #3a9bd6;
+$gold: #c7a17a;
+
+.text-red-light {
+  color: $red-light;
+}
+
+.text-grey {
+  color: $gray;
+}
+
+.btn-text-blue {
+  color: $blue;
+}
+
+.bg-gray-dark {
+  background-color: $gray-dark;
+}
