@@ -1,37 +1,36 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Capstone Project - CoffeeToGo
+# Capstone Project - LendAbook
 
-> CoffeToGo directory. Spots where you can grab your favourite coffee brand to go!
+> LendAbook directory. Books and book owners directory, a service offering of borrowing and lending books online!
 
-![screenshot](./preview.png)
+![Large screen 1200w](./Largescreen1200.png)
+![Medium screen Tablet](./Tablet.png)
+![Small screen phone](./SmallScreen.png)
 
-## This project covers the following features:
+## This project covers the following features
 
-- The main page, where you can find your favourite CoffeToGo spot
-- Result page, what we found and listing of other nearby places
-- On the detail page, each location has its specific offering. Never misses again our daily offering is!
+- The main page, where you can find books of your desire which is available to borrow.
+- Result page, what we saw and listing of similar books or books related to a specific author
+- On the detail page, each book has information about lander and availability.
 
 ## Built With
 
 - HTML
-- SCSS
+- SCSS/css
 
 ## Live Demo
 
-[Live Demo Link](https://marijanbrvar.github.io/CoffeeToGo/)
+[Live Demo Link](https://marijanbrvar.github.io/LendABook/)
 
-## Getting Started
-TBA
-
-### Prerequisites
-TBA
 ### Setup
-TBA
+
+Pure HTML CSS no need for additional configuration or seting up. You can simpy run from file.
+
 ### Install
-TBA
-### Usage
-TBA
+
+No instaltaion required
+
 ### Run tests
 
 For HTML use npx hint .
