@@ -36,6 +36,11 @@
   font-size: 0.8125rem;
 }
 
+p a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
 body {
   padding-top: 3.53em;
 }
@@ -197,11 +202,6 @@ body {
     left: calc(50% - 40px);
     z-index: 1;
   }
-}
-
-body main section.my-4 div div:nth-child(2) p a {
-  text-decoration: none;
-  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */
