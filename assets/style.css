@@ -16,6 +16,26 @@
   background-color: #353535 !important;
 }
 
+.borow {
+  background: #f0795f;
+}
+
+.lend {
+  background: #96a4a6;
+}
+
+.anytime {
+  background: #3a9bd6;
+}
+
+.container {
+  max-width: 960px;
+}
+
+.footer-mid p {
+  font-size: 0.8125rem;
+}
+
 body {
   padding-top: 3.53em;
 }
@@ -23,10 +43,6 @@ body {
   body {
     padding-top: 92px;
   }
-}
-body main section.my-4 div div:nth-child(2) p a {
-  text-decoration: none;
-  font-weight: bold;
 }
 
 .hero {
@@ -77,26 +93,6 @@ body main section.my-4 div div:nth-child(2) p a {
 .top-nav .brand {
     flex: 1 0 100%;
   }
-}
-
-.borow {
-  background: #f0795f;
-}
-
-.lend {
-  background: #96a4a6;
-}
-
-.anytime {
-  background: #3a9bd6;
-}
-
-.container {
-  max-width: 960px;
-}
-
-.footer-mid p {
-  font-size: 0.8125rem;
 }
 
 .result a {
@@ -201,6 +197,11 @@ body main section.my-4 div div:nth-child(2) p a {
     left: calc(50% - 40px);
     z-index: 1;
   }
+}
+
+body main section.my-4 div div:nth-child(2) p a {
+  text-decoration: none;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */
