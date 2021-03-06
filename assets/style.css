@@ -24,6 +24,10 @@ body {
     padding-top: 92px;
   }
 }
+body main section.my-4 div div:nth-child(2) p a {
+  text-decoration: none;
+  font-weight: bold;
+}
 
 .hero {
   height: 450px;
